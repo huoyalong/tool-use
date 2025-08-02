@@ -1,0 +1,326 @@
+:root {
+  --side-bar-bg-color: rgba(231,153,176,0.5);
+  --window-border: 2px solid #E799B0;
+
+
+  --font-sans-serif: "思源宋体", "Source Han Sans CN", "Ubuntu", "Source Han Sans SC", "Source Sans Pro", sans-serif !important;
+  --font-monospace: "Fira Code", "思源黑体", "Noto Sans CJK SC", monospace !important;
+
+  --base-font: -apple-system, "Fira Code", "思源黑体", "Noto Sans", "Helvetica Neue", Helvetica,
+    "Nimbus Sans L", Arial, "Liberation Sans", "Noto Sans CJK SC", "PingFang SC",
+    "Hiragino Sans GB", "Source Han Sans SC", "Source Han Sans CN",
+    "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti",
+    SimHei, "WenQuanYi Zen Hei Sharp", "Ubuntu", "Source Sans Pro", monospace;
+
+    --title-font: "Noto Serif CJK SC", "Songti SC", "Source Han Serif SC",
+    "Source Han Serif CN", STSong, "AR PL New Sung", "AR PL SungtiL GB", NSimSun,
+    SimSun, "TW\-Sung", "WenQuanYi Bitmap Song", "AR PL UMing CN",
+    "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", PMingLiU, MingLiU,
+    "Ubuntu", "Source Sans Pro", serif;
+  --em-font: "Noto Serif CJK SC" ， "Songti SC", "Source Han Serif SC",
+    "Source Han Serif CN", STSong, "AR PL New Sung", "AR PL SungtiL GB", NSimSun,
+    SimSun, "TW\-Sung", "WenQuanYi Bitmap Song", "AR PL UMing CN",
+    "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", PMingLiU, MingLiU,
+    "Ubuntu", "Source Sans Pro", serif;
+  --quota-font: "EB Garamond", Baskerville, Georgia, "Liberation Serif",
+    "TW-Kai", "Kaiti SC", STKaiti, "AR PL UKai CN", "AR PL UKai HK",
+    "AR PL UKai TW", "AR PL UKai TW MBE", "AR PL KaitiM GB", KaiTi, KaiTi_GB2312,
+    DFKai-SB, "TW\-Kai", serif;
+  --monospace: "Fira Code", "思源黑体", "Noto Sans", "Noto Sans CJK SC", "Cascadia code", "Sarasa Term SC", Monaco, "Deja Vu Sans Mono",
+    Consolas, "Lucida Console", "Andale Mono", "Fira Code", "Roboto Mono",
+    monospace, Courier;
+}
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: initial;
+}
+
+body {
+  color: var(--text-color);
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6rem;
+  letter-spacing: 0;
+  margin: 0;
+  overflow-x: hidden;
+  background: #f6d9e1;
+}
+
+content {
+  background: #f6d9e1;
+}
+
+#write h1,
+#write h2,
+#write h3,
+#write h4,
+#write h5,
+#write h6,
+#write p,
+#write pre {
+  width: 100%;
+}
+
+#write {
+  background-color: #fff !important; 
+  width: 80%;
+  line-height: 1.6;
+  height: auto;
+  background: url("./jiaran.png") no-repeat;
+  background-size: 10%;
+  background-position: 90% bottom;
+  background-attachment: fixed;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  padding-left: 80px;
+  padding-right: 80px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px #E799B0;
+  z-index: 0;
+}
+
+#filesearch-case-option-btn,
+#filesearch-word-option-btn {
+  background: #E799B0;
+}
+
+#typora-sidebar {
+  color: #404040;
+  font-weight: bold;
+}
+
+#sidebar-files-menu {
+  border: 2px solid #E799B0;
+}
+
+.file-list-item {
+  color: #000;
+  border-bottom: var(--window-border);
+  overflow: hidden;
+}
+
+.file-list-item.active {
+  background-color: rgba(222,114,146,0.6);
+  color: #000;
+}
+
+.file-list-item-file-name {
+  font-weight: 700;
+  margin-bottom: 3px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  line-height: 2;
+}
+
+.file-node-content {
+  padding-top: 6px;
+  margin-bottom: 6px;
+  white-space: nowrap;
+  font-weight: normal;
+  overflow: hidden;
+}
+
+.file-node-content:active {
+  background-color: #de7292;
+}
+
+.active .file-node-content {
+  font-weight: bold;
+}
+
+.ty-on-drag-enter {
+  background-color: #E799B0;
+}
+
+.file-node-content:hover {
+  cursor: pointer;
+  background: #f6d9e1;
+  border-radius: 10px;
+}
+
+.file-node-icon,
+.file-node-open-state {
+  padding-left: 10px;
+  margin-right: 6px;
+  float: left;
+}
+
+#typora-sidebar .file-list-item.file-library-node:not(.active):hover {
+  background: #f6d9e1;
+}
+
+#typora-sidebar .file-tree-node.file-library-file-node.active .file-node-background {
+  background: #E799B0;
+  border-left: 5px solid #404040;
+}
+
+.sidebar-footer {
+  background: #f0bfce;
+}
+
+.html-for-mac #file-library-search-input {
+  font-weight: normal;
+  color: #202020;
+}
+
+#typora-sidebar #ty-sidebar-footer .sidebar-footer-item:hover {
+  background: #eaa6ba;
+}
+
+#typora-sidebar #outline-content .outline-item:hover {
+  background: #f0bfce;
+}
+
+#typora-sidebar #ty-sidebar-footer #sidebar-files-menu .show+.menuitem-group-label.show {
+  border-color: #E799B0;
+}
+
+#typora-sidebar #ty-sidebar-footer {
+  border-top: var(--window-border);
+  color: #202020;
+}
+
+#typora-sidebar #ty-sidebar-footer #sidebar-files-menu li>a:hover {
+  background: #edb3c4;
+  border-radius: 5px
+}
+#typora-sidebar #ty-sidebar-footer #sidebar-files-menu {
+  background: #f6d9e1;
+}
+
+#typora-sidebar #ty-sidebar-footer #sidebar-files-menu .ty-side-sort-btn.active {
+  background: #f6d9e1;
+}
+
+#typora-sidebar #ty-sidebar-footer #sidebar-files-menu .ty-side-sort-btn.active,
+#typora-sidebar #ty-sidebar-footer #sidebar-files-menu .ty-side-sort-btn:hover {
+  color: #576690;
+}
+
+
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 2px 2px 0 #f0bfce;
+    font-weight: bold;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #f3ccd8;
+    background-color: #fcf2f5;
+    border-radius: 3px;
+    padding-left: 2px;
+    font-size: 0.9em;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+.mathjax-block {
+  box-shadow: 0 2px 2px 0 #f0bfce;
+}
+
+blockquote {
+    border-left: 4px solid #E799B0;
+    padding: 0 15px;
+    color: #777777;
+}
+
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border: 1px solid #f0bfce;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: rgba(252,242,245,0.6);
+}
+table th {
+    border: 1px solid #f0bfce;
+    margin: 0;
+    padding: 6px 13px;
+}
+table td {
+    border: 1px solid #f0bfce;
+    margin: 0;
+    padding: 6px 13px;
+}
+
+.md-reset {
+  background-color: #fff;
+}
+
+.md-reset .md-grid-ext {
+  background-color: #eaa6ba;
+}
+
+.md-reset .md-grid-ext a.md-active {
+  background-color: #f6d9e1;
+}
+
+.md-reset a.md-active {
+  background-color: #f6d9e1;
+}
+
+
+
+#write mark {
+  background-color: rgba(251, 211, 234, 0.6);
+  border-radius: 2px;
+  padding: 2px 4px;
+  margin: 0 2px;
+}
+
+#write del {
+  padding: 1px 2px;
+}
+
+/* 图片 */
+.md-image > .md-meta {
+  border-radius: 3px;
+  font-family: var(--monospace);
+  padding: 2px 0 0 4px;
+  font-size: 0.9em;
+  color: inherit;
+}
+/* 图片靠左显示 */
+p .md-image:only-child {
+  width: auto;
+  text-align: left;
+  margin-left: 2rem;
+}
+.md-tag {
+  color: inherit;
+}
+
+/* 粗体 */
+#write strong {
+  padding: 0 2px;
+  font-weight: 600;
+  font-family: var(--em-font);
+}
+
+/* 斜体 */
+#write em {
+  padding: 0 5px 0 2px;
+  font-family: var(--em-font);
+  /* font-style: normal;
+  color: #4abdeb; */
+}

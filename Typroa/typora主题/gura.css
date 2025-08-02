@@ -1,0 +1,226 @@
+:root {
+
+  --side-bar-bg-color: rgb(120, 174, 234);
+  --window-border: 2px solid #76c5dd;
+
+}
+html,
+body,
+content {
+    background: #cae0ee;
+}
+
+#write {
+  background-color: #fff !important;
+  width: 80%;
+  line-height: 1.6;
+  height: auto;
+  background: url("./gura.png") no-repeat;
+  background-size: 10%;
+  background-position: 90% bottom;
+  background-attachment: fixed;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  padding-left: 80px;
+  padding-right: 80px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px #6fa3e2;
+}
+
+#filesearch-case-option-btn,
+#filesearch-word-option-btn {
+  background: #6fa3e2;
+}
+
+#typora-sidebar {
+    color: #404040;
+    font-weight: bold;
+}
+
+#sidebar-files-menu {
+  border: 2px solid #6fa3e2;
+}
+
+.file-list-item {
+  color: #000;
+  border-bottom: var(--window-border);
+  overflow: hidden;
+}
+
+.file-list-item.active {
+  background-color: rgb(100, 196, 227);
+  color: #000;
+}
+
+.file-list-item-file-name {
+  font-weight: 700;
+  margin-bottom: 3px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  line-height: 2;
+}
+
+.file-node-content {
+  padding-top: 6px;
+  margin-bottom: 6px;
+  white-space: nowrap;
+  font-weight: normal;
+  overflow: hidden;
+}
+
+.file-node-content:active {
+  background-color: #6fa3e2;
+}
+
+.active .file-node-content {
+  font-weight: bold;
+}
+
+.ty-on-drag-enter {
+  background-color: #6fa3e2;
+}
+
+.file-node-content:hover {
+  cursor: pointer;
+  background: #93cadb;
+  border-radius: 10px;
+}
+
+.file-node-icon,
+.file-node-open-state {
+  padding-left: 10px;
+  margin-right: 6px;
+  float: left;
+}
+
+#typora-sidebar .file-list-item.file-library-node:not(.active):hover {
+  background: #b8d7ef;
+}
+
+#typora-sidebar .file-tree-node.file-library-file-node.active .file-node-background {
+  background: #6fa3e2;
+  border-left: 5px solid #404040;
+}
+
+.sidebar-footer {
+  background: #6fa3e2;
+}
+
+.html-for-mac #file-library-search-input {
+  font-weight: normal;
+  color: #202020;
+}
+
+#typora-sidebar #ty-sidebar-footer .sidebar-footer-item:hover {
+  background: #6fa3e2;
+}
+
+#typora-sidebar #outline-content .outline-item:hover {
+  background: #a6c2e3;
+}
+
+#typora-sidebar #ty-sidebar-footer #sidebar-files-menu .show+.menuitem-group-label.show {
+  border-color: #6fa3e2;
+}
+
+#typora-sidebar #ty-sidebar-footer {
+  border-top: var(--window-border);
+  color: #202020;
+}
+
+#typora-sidebar #ty-sidebar-footer #sidebar-files-menu li>a:hover {
+  background: #6fa3e2;
+  border-radius: 5px
+}
+#typora-sidebar #ty-sidebar-footer #sidebar-files-menu {
+  background: #a3c3e7;
+}
+
+#typora-sidebar #ty-sidebar-footer #sidebar-files-menu .ty-side-sort-btn.active {
+  background: #cadef1;
+}
+
+#typora-sidebar #ty-sidebar-footer #sidebar-files-menu .ty-side-sort-btn.active,
+#typora-sidebar #ty-sidebar-footer #sidebar-files-menu .ty-side-sort-btn:hover {
+  color: #92c9e9;
+}
+
+
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 2px 2px 0 #92d3f1;
+    font-weight: bold;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #9fd7e7;
+    background-color: #e4eaf1;
+    border-radius: 3px;
+    padding-left: 5px;
+    font-size: 0.9em;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+.mathjax-block {
+  box-shadow: 0 2px 2px 0 #e4eaf1;
+}
+
+blockquote {
+    border-left: 4px solid #92d3f1;
+    padding: 0 15px;
+    color: #777777;
+}
+
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border: 1px solid #92d3f1;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: rgba(252,242,245,0.6);
+}
+table th {
+    border: 1px solid #92d3f1;
+    margin: 0;
+    padding: 6px 13px;
+}
+table td {
+    border: 1px solid #92d3f1;
+    margin: 0;
+    padding: 6px 13px;
+}
+
+.md-reset {
+  background-color: #fff;
+}
+
+.md-reset .md-grid-ext {
+  background-color: #92d3f1;
+}
+
+.md-reset .md-grid-ext a.md-active {
+  background-color: #b7ddf1;
+}
+
+.md-reset a.md-active {
+  background-color: #92d3f1;
+}
